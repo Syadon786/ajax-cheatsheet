@@ -1,0 +1,67 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+
+main
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .login-btn {
+        margin-left: 85%;
+    }
+}
+
+@media (max-width: 575px) {
+    .login-btn {
+        margin-left: 40%;
+    }
+}
+
+
+.post-avatar {
+    float: left;
+}
+
+.post-details-container {
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+}
+
+.post-text {
+    text-align: left;
+}
+
+.failed-login {
+    border: 1px solid red;
+    box-shadow: inset 0px 0px 3px 0px red;
+}
+
+.loading-icon {
+    margin-left: 20px;
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}
+
